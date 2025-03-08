@@ -1,0 +1,6 @@
+1. Learn USe Scroll Hook
+2.Learn dark mode toggle Images Again from tutorial
+3. Add K Logo for Kotion
+4. Study Navigation.tsx in detial
+
+Convex creates a real time database whoose backend makes realtime check for queries and everthing is updated in Realtime
