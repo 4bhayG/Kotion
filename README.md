@@ -1,4 +1,22 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+A powerful knowledge management and collaboration tool designed for seamless document creation, organization, and real-time editing.
+🔹 Overview
+
+Kotion is a modern web-based platform that allows users to create, manage, and collaborate on documents efficiently. Built with Next.js, TypeScript, and Convex DB, it provides a smooth and intuitive experience for organizing knowledge, projects, and ideas.
+✨ Features
+
+✅ Real-time Document Editing – Collaborate seamlessly with dynamic content updates.
+✅ Structured Hierarchy – Organize documents efficiently with nested pages.
+✅ Quick Search & Navigation – Access content instantly using keyboard shortcuts.
+✅ Secure Authentication – User management powered by Clerk for safe access.
+✅ Minimalist & Responsive UI – Built with Tailwind CSS for a sleek experience.
+✅ Optimized Performance – Fast and scalable, ensuring smooth workflow.
+🛠️ Tech Stack
+
+    Frontend: Next.js, TypeScript, Tailwind CSS
+    Backend: Convex DB (serverless database)
+    Authentication: Clerk
+    State Management: React Hooks, Zustand
+    Icons & UI Components: Lucide-react, ShadCN/UI
 
 ## Getting Started
 
