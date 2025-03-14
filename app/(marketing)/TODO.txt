@@ -1,0 +1,16 @@
+1. Learn USe Scroll Hook
+2.Learn dark mode toggle Images Again from tutorial
+3. Add K Logo for Kotion
+4. Study Navigation.tsx in detial
+
+5. study in detail about how isMounted Resolves Hydration Error
+6. Study about event Listner of ctrl + k in Search-command
+
+7.setTimeout(() => {
+      inputRef.current?.focus();
+      inputRef.current?.setSelectionRange(0,inputRef.current.value.length);
+    }, 0);
+    explaij this
+    
+
+Convex creates a real time database whoose backend makes realtime check for queries and everthing is updated in Realtime
