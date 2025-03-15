@@ -10,11 +10,12 @@ import Cover from "@/app/(main)/_components/Cover";
 import { Skeleton } from "@/components/ui/skeleton";
 import Editor from "@/components/Editor";
 
-type Params = Promise<{ documentId: Id<"documents"> }>;
+type Params = Promise<{ documentId: string }>;
 
-export default function DocumentIdPage(props: { params: Params }) {
-  const params = use(props.params); // ✅ Using `use()` to unwrap the promise
-  const documentId = params.documentId;
+export default function DocumentIdPage(props: { params: Params }){
+
+  const params = use(props.params);
+  const documentId = params.documentId as Id<"documents">;
 
   const update = useMutation(api.documents.update);
 
@@ -24,7 +25,7 @@ export default function DocumentIdPage(props: { params: Params }) {
   if (document === undefined) {
     return (
       <div>
-        <Cover.skeleton /> {/* Keeping it unchanged as per your request */}
+        <Cover.skeleton /> 
         <div className="md:max-w-3xl lg:max-w-4xl mx-auto mt-10">
           <div className="space-y-4 pl-8 pt-4">
             <Skeleton className="h-14 w-[50%]" />
@@ -37,7 +38,7 @@ export default function DocumentIdPage(props: { params: Params }) {
     );
   }
 
-  // ✅ Handle document not found
+ 
   if (document === null) {
     return (
       <div className="flex justify-center items-center h-screen">
