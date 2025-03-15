@@ -9,20 +9,18 @@ import Toolbar from "@/app/(main)/_components/toolbar";
 import Cover from "@/app/(main)/_components/Cover";
 import { Skeleton } from "@/components/ui/skeleton";
 import Editor from "@/components/Editor";
-
-interface props {
-    params: {
-        documentId: Id<"documents">
-    }
-}
+import { useParams } from "next/navigation";
 
 
-const DocumentIdPage = ({ params }: props) => {
 
-    
+
+const DocumentIdPage = () => {
+
+    const params = useParams();
+
 
     const document = useQuery(api.documents.getById, {
-        documentId: params.documentId
+        documentId: params.documentId as Id<"documents">
     });
 
     if (document === undefined) {
