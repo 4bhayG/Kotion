@@ -3,12 +3,12 @@
 import { cn } from "@/lib/utils";
 
 
-import { ChevronsLeft, MenuIcon, PlusCircle, Search, Settings, Trash, Trash2, TrashIcon } from "lucide-react";
+import { ChevronsLeft, MenuIcon, PlusCircle, Search, Settings, Trash } from "lucide-react";
 import { useParams, usePathname } from "next/navigation";
 import { ComponentRef, useEffect, useRef, useState } from "react";
 import {useMediaQuery} from "usehooks-ts" ;
 import UserItem from "./User-item";
-import { useMutation, useQuery } from "convex/react";
+import { useMutation } from "convex/react";
 import { api } from "@/convex/_generated/api";
 import Item from "./Items";
 import { toast } from "sonner";
