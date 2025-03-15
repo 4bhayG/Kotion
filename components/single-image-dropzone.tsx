@@ -6,7 +6,7 @@ import * as React from 'react';
 import { useDropzone, type DropzoneOptions } from 'react-dropzone';
 import { twMerge } from 'tailwind-merge';
 
-import { Spinner } from './spinner';
+import  Spinner  from './spinner';
 import Image from 'next/image';
 
 const variants = {
