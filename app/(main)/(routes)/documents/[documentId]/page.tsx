@@ -9,16 +9,17 @@ import Cover from "@/app/(main)/_components/Cover";
 import { Skeleton } from "@/components/ui/skeleton";
 import Editor from "@/components/Editor";
 
-const DocumentIdPage = () => {
+export default function DocumentIdPage() {
   // Get params from the URL using Next.js hook
   const params = useParams();
+  // Ensure the documentId is properly typed
   const documentId = params.documentId as Id<"documents">;
   
   const update = useMutation(api.documents.update);
-  // Fetch document data
-  const document = useQuery(api.documents.getById, { documentId });
+  const document = useQuery(api.documents.getById, { 
+    documentId 
+  });
   
-  // Handle loading state
   if (document === undefined) {
     return (
       <div>
@@ -55,6 +56,4 @@ const DocumentIdPage = () => {
       </div>
     </div>
   );
-};
-
-export default DocumentIdPage;
+}
