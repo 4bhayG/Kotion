@@ -1,6 +1,5 @@
 "use client";
-// @ts-ignore
-import {Navbar} from "@/app/(marketing)/Navbar";
+
 import { cn } from "@/lib/utils";
 
 
@@ -17,7 +16,7 @@ import DocumentList from "@/components/document-list";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { TrashBox } from "./Trash-box";
 import { useSettings } from "@/hooks/use-settings";
-// @ts-ignore
+
 import {Navbar as Nav} from "../_components/navbar";
 import { useSearch } from "@/hooks/use-Search";
 import { useRouter } from "next/navigation";

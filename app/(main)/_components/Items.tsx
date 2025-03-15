@@ -67,7 +67,7 @@ const Item = ({
 
                 }
 
-                // router.push( `documents/${documentId}`);
+                router.push( `documents/${documentId}`);
             });
 
         toast.promise(Promise, {

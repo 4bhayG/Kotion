@@ -6,7 +6,7 @@ import { useConvexAuth } from "convex/react";
 import { redirect } from "next/navigation";
 import Navigation from "./_components/Navigation";
 import { SearchCommand } from "@/components/search-command";
-import { EdgeStoreProvider } from "@/lib/edgestore";
+
 
 const MainLayout
  = ({

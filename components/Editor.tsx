@@ -1,6 +1,6 @@
 'use client'
 
-import {BlockNoteEditor,PartialBlock} from '@blocknote/core'
+import {PartialBlock} from '@blocknote/core'
 import {useCreateBlockNote } from '@blocknote/react';
 import { BlockNoteView } from "@blocknote/mantine";
 

@@ -3,7 +3,6 @@
 import Image from "next/image";
 
 import { useUser } from "@clerk/nextjs";
-import { use } from "react";
 import { Button } from "@/components/ui/button";
 import { PlusCircle } from "lucide-react";
 import { useMutation } from "convex/react";

@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 
-import { Image as i, X } from "lucide-react";
+import { X } from "lucide-react";
 import { useCoverImage } from "@/hooks/use-cover-image";
 import { useMutation } from "convex/react";
 import { api } from "@/convex/_generated/api";
@@ -10,7 +10,7 @@ import { useParams } from "next/navigation";
 
 import { Id } from "@/convex/_generated/dataModel";
 import { useEdgeStore } from "@/lib/edgestore";
-import { string } from "zod";
+
 import { Skeleton } from "@/components/ui/skeleton";
 
 interface CoverProps {

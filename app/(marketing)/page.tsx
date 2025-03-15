@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+
 import Heading from "./heading";
 import Heroes from "./heroes";
 import Footer from "./Footer";

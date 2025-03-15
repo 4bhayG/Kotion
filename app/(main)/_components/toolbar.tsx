@@ -6,7 +6,7 @@ import { IconPicker } from "./icon-picker";
 import { Button } from "@/components/ui/button";
 import { Image, Smile, X } from "lucide-react";
 import { ComponentRef, useRef, useState } from "react";
-import { init } from "next/dist/compiled/webpack/webpack";
+
 import { useMutation } from "convex/react";
 import { api } from "@/convex/_generated/api";
 

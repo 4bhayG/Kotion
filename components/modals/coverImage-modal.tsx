@@ -39,13 +39,13 @@ export const CoverImageModal = ()=> {
         setSubmiting(true);
         setFile(newFile);
 
-        let res;
+        
         console.log("File Upload Gonna Start");
         
 
         
           
-           res  = await edgestore.publicFiles.upload({
+          const  res  = await edgestore.publicFiles.upload({
             file: newFile  ,
             options : {
               replaceTargetUrl : coverImage.url

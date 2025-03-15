@@ -8,7 +8,7 @@ const es = initEdgeStore.create();
  */
 const edgeStoreRouter = es.router({
   publicFiles: es.fileBucket()
-  .beforeDelete(({ ctx , fileInfo}) => {
+  .beforeDelete(() => {
     return true ;
   })
 });
