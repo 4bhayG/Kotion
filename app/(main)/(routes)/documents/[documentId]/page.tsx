@@ -1,6 +1,6 @@
 "use client";
 
-import { use } from "react";
+
 import { api } from "@/convex/_generated/api";
 import { Id } from "@/convex/_generated/dataModel";
 import { useMutation, useQuery } from "convex/react";
@@ -9,13 +9,14 @@ import Toolbar from "@/app/(main)/_components/toolbar";
 import Cover from "@/app/(main)/_components/Cover";
 import { Skeleton } from "@/components/ui/skeleton";
 import Editor from "@/components/Editor";
+import { useParams } from "next/navigation";
 
-type Params = Promise<{ documentId: string }>;
 
-export default function DocumentIdPage(props: { params: Params }){
 
-  const params = use(props.params);
-  const documentId = params.documentId as Id<"documents">;
+export default function DocumentIdPage(){
+
+  const params = useParams();
+  const documentId = params.documentId as Id<"documents"> ;
 
   const update = useMutation(api.documents.update);
 
